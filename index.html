@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Abigail's Lessons Website </title>
+        <style>
+    body {
+        background: url(http://images.unsplash.com/photo-1551499779-ee50f1aa4d25?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);
+        color: rgb(45, 45, 45);
+        padding: 20px;
+        font-family: cursive;
+    }
+    header {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: rgb(250, 229, 229);
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 10px;
+    }
+    nav header {
+        display: flex;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        flex: 1;
+    }
+    nav ul {
+        list-style-image:none;
+    }
+    nav li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    nav a {
+        text-decoration: none;
+        color: #191970;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: rgb(229, 250, 250);
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar img {
+        width: 200px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    .interests header {
+        font-size: 1.25em;
+    }
+</style>
+    </head>
+    
+    <body>
+     <div id="all-contents">
+         <nav>
+             <h>Abigail's Lessons Website</h>
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="portfolio.html">Portfolio</a></li>
+             </ul>
+         </nav>
+         <main>
+             <div class="sidebar">
+                 <img src= "https://mail.google.com/mail/u/0?ui=2&ik=5da1cba71c&attid=0.1&permmsgid=msg-f:1650108954480342370&th=16e65d59f87df562&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ8PkKod0cPJmDIGwllYWIUkWa1rNQCyyBOlM4AqyrSAHZXiXnICigvY1ODqx3pdx--GozjMc3JiiqrOXFzFmJ0GUMYwcB_hDHk8dRNtARQyS4MS8uFRCgc0vAo&disp=emb&realattid=54e12e8748914b_0.1.1">
+             </div>
+             <div class="content">
+                 <h>
+                     "Abigail White"
+                 </h>
+                 <p>
+                     "Student at NHS"
+                 </p>
+                 <section class="interests">
+                     <h>Interests</h>
+                     <ul>
+                         <li>Art</li>
+                         <li>Theatre</li>
+                         <li>Music</li>
+                     </ul>
+                 </section>
+             </div>
+         </main>
+     </div>
+    </body>
+</html>
