@@ -16,8 +16,6 @@ var level01 = function (window) {
             "number": 1, 
             "speed": -3,
             "gameItems": [
-                { "type": "sawblade", "x": 1000, "y": 250 },
-                { "type": "sawblade", "x": 1900, "y": groundY },
                 { "type": "sawblade", "x": 2700, "y": groundY },
                 { "type": "sawblade", "x": 4000, "y": 250},
                 { "type": "reward","x":400,"y":groundY-100}
@@ -58,17 +56,17 @@ var level01 = function (window) {
            
              var obstacleImage = draw.bitmap('img/obstacle.png');
             obstacleImage.x = -45;
-            obstacleImage.y = -95;
+            obstacleImage.y = -65;
             
             scaryHitZone.addChild(obstacleImage);
             game.addGameItem(scaryHitZone);
         }
-        createScary(500,groundY-40);
-        createScary(1000,groundY-40);
-        createScary(1500,groundY-40);
-        createScary(2000,groundY-40);
-        createScary(2500,groundY-40);
-        createScary(3000,groundY-40);
+        createScary(500,groundY-30);
+        createScary(1000,groundY-30);
+        createScary(1500,groundY-30);
+        createScary(2000,groundY-30);
+        createScary(2500,groundY-30);
+        createScary(3000,groundY-30);
         
         function createMyobby(x,y) {
             var hitZoneSize = 50;
@@ -79,12 +77,12 @@ var level01 = function (window) {
             
             game.addGameItem(obbyHitZone);
             
-            var obstacleImage = draw.bitmap('img/books.png');
+            var obstacleImage = draw.bitmap('img/level.png');
             obbyHitZone.addChild(obstacleImage);
-            obstacleImage.x = -45;
-            obstacleImage.y = -55;
+            obstacleImage.x = -295;
+            obstacleImage.y = -235;
         }
-       createMyobby(100,200);
+       createMyobby(5000,200);
         
         function createEnemy(x,y){
             var enemy = game.createGameItem('enemy', 100);
@@ -93,8 +91,8 @@ var level01 = function (window) {
             enemy.velocityX = -1;
             
             var redSquare = draw.bitmap('img/hq.png');
-            redSquare.x = -65;
-            redSquare.y = -145;
+            redSquare.x = -180;
+            redSquare.y = -115;
             
             enemy.addChild(redSquare);
             game.addGameItem(enemy);
@@ -109,7 +107,7 @@ var level01 = function (window) {
             };
         }
         
-        createEnemy(600, groundY-100);
+        createEnemy(4000, groundY-100);
         createEnemy(3300, groundY-100);
         createEnemy(5400,groundY-100);
        
@@ -137,9 +135,9 @@ var level01 = function (window) {
            };
            
        }
-       
+       createBad(1500,groundY-110);
        createBad(2300, groundY-110);
-       createBad(4000, groundY-110); 
+       createBad(600, groundY-110); 
        
        
         
@@ -185,7 +183,7 @@ var level01 = function (window) {
           
         }
     createReward(1200,groundY-100);
-    createReward(4600,groundY-100);
+    createReward(800,groundY-100);
     createReward(2100,groundY-100);
         
         function createKawaii(x,y) {
@@ -206,7 +204,7 @@ var level01 = function (window) {
                 reward.fadeOut();
             };
         }
-        createKawaii(800, groundY-50);
+        createKawaii(4600, groundY-50);
         createKawaii(5400,groundY-50);
         createKawaii(3400,groundY-50);
         
